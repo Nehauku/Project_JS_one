@@ -11,13 +11,12 @@ const personalMovieDB = {
 	privat: false
 };
 
-const answers = [];
-answers[0] = prompt('Один из последних просмотренных фильмов?', '');
-answers[1] = +prompt('На сколько оцените его?', '');
+let a = prompt('Один из последних просмотренных фильмов?', '');
+let b = +prompt('На сколько оцените его?', '');
+let c = prompt('Один из последних просмотренных фильмов?', '');
+let d = +prompt('На сколько оцените его?', '');
 
-let answer = answers[0],
-	ratting = answers[1];
-
-personalMovieDB.movies = `${answer}: ${ratting}`;
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
 console.log(personalMovieDB);
